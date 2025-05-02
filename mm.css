@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --primary-color: #000000;
+  --text-dark: #171717;
+  --text-light: #5f4141;
+  
+  --white: #ffffff;
+  --max-width: 1200px;
+  --header-font: "Merriweather", serif;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  
+}
+header {
+    background-image: url("../../../Pictures/lipps[1].jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #4e3b31; 
+    padding: 20px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+ }
+ .section__header{
+text-align: center;
+font-size: 30px;
+color: #4e3b31;
+
+ }
+.product__grid {
+    display: flex;
+}
+
+
+
+.product__card {
+        text-align: center;
+        width: calc(33.33% - 40px); 
+        height: auto;
+        box-sizing: border-box;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+        margin: 8px;
+        background-color: white;
+        border:1px solid #916a55;
+}
+.product__card::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 20%;
+  background-color: var(--extra-light);
+  z-index: -1;
+  transition: 0.3s;
+}
+.product__card:hover {
+  transform: scale(1.05);
+ 
+  
+}
+.menu-item:hover .dropdown {
+  display: flex;
+  background-color: #ffffff; 
+  color: #000;            
+}
+.product__card h4 {
+  font-size: 1.5rem;
+  font-weight: 355;
+  color: var(--text-dark);
+}
+.product__card p {
+  margin-bottom: 0.3rem;
+  font-size: 1.2rem;
+  color: var(--text-light);
+}
+.product__card img {
+
+        width: 100%;
+        border-radius: 8px;
+        height: auto;
+        float: right;
+        }
+
+.client__card {
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  text-align: left;
+}
+.deals__card:nth-child(1) {
+  grid-column: unset;
+}
+img {
+display: flex;
+margin: 20px auto;
+width: 5px;
+height: 10px;
+border-radius: 8px;
+border:1px solid #916a55;
+}
+.about__grid {
+  gap: 4rem 2rem;
+}
+p {
+    padding: 5px;
+    line-height: 1.8;
+    font-size: 18px;
+    text-align: center;  
+}
+
